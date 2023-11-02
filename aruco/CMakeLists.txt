@@ -3,6 +3,7 @@ project(aruco)
 
 find_package(catkin)
 find_package(Eigen3 REQUIRED)
+set(OpenCV_DIR /usr/local/share/OpenCV)
 find_package(OpenCV 3 REQUIRED)
 set(CMAKE_CXX_STANDARD 11) # C++11...
 set(CMAKE_CXX_STANDARD_REQUIRED ON) #...is required...

@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 2.8.3)
+/usr/local/share/OpenCVcmake_minimum_required(VERSION 2.8.3)
 project(aruco_ros)
 
-set(OpenCV_DIR /usr/local/share/OpenCV)
+set(OpenCV_DIR /usr/lib/aarch64-linux-gnu/cmake/opencv4)
 find_package(OpenCV REQUIRED)
 
 find_package(catkin REQUIRED COMPONENTS
@@ -32,7 +32,9 @@ catkin_package(
 
 
 include_directories(
-  include
+  include)
+include_directories(
+  SYSTEM
   ${catkin_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
 )
